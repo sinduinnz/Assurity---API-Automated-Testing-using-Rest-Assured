@@ -1,0 +1,38 @@
+import org.testng.annotations.Test;
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestScpecification;
+
+pubcli class APITest {
+
+     @Test
+     public void verify_acceptance_crit()
+     {
+              //Specify the base URL to the RESTful webservice
+              RestAssured.baseURI = "https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json?catalogue=false";
+              
+              // Get the RequestSpecification of the request that you want to sent to the server.The server is specified by the BaseURI in the baove step
+              RequestSpecification httpRequest = RestAssured.given();
+              
+              //Issue a request to the server by specifying the method Type and the method URL.
+              // This returns the Response from the server.Store the reponse in a variable.
+              Response response = httpRequest.get("/");
+              
+              // Get the Json Path Object Instance from the Response Interface
+              JsonPath jsonPathEvaluator = response.jsonpath();
+              
+              
+              //Query the JsonPath Object to get a string value of the node specified by JsonPath:Name
+              String Name =jsonPathEvaluator.get("Name");
+              
+              //Print the Name to see what we got
+              System.out.println("Name recieved from reponse is " + Name);
+              
+              //Validate the 1st Accpetance Criteria -Name should be equal to Carbon credits
+              Assert.assertequals(Name, "Carbon credits", " 1st Acceptance Criteria fullfilled -Correct Name recieved in the response"); 
+              
+      }        
+              
+              
+              
