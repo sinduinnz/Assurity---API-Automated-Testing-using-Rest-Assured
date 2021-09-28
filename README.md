@@ -1,3 +1,5 @@
+**API/WebServices Testing( End- to -End Process)**
+
 **Objective**:- Testing of API is automated using Rest Assured which is a java based library
 
 **Description:**- Code has been written to automate the testing of the API given below with 3 acceptance criteria listed :
@@ -11,10 +13,12 @@
 
 **Steps to be followed to execute the TestCase:**
 
-A) **Pre-Requisites:**-
+A) **Pre-Requisites - Setting up the Environment********
           1) Setting up Java,Eclispse and TestNg
           2) Downalod Rest -Assured JAR files
           3) Creating a Project in Eclipse
           4) Setting up Rest-Assured Jars in class Path of Eclipse
               
 B) As the Rest-Assured Setup is done,RESTful Webservice test can be written as mentioned in the attached file.
+
+
