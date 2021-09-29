@@ -1,12 +1,17 @@
+package apitest;
+
 import org.testng.annotations.Test;
+import org.junit.Assert;
+
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestScpecification;
 
 pubcli class APITest {
 
-     @Test
+     public static void main(String[] args){
      public void verify_acceptance_crit()
      {
               //Specify the base URL to the RESTful webservice
