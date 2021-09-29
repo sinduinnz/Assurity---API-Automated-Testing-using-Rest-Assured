@@ -14,14 +14,15 @@
 **Steps to be followed to execute the TestCase:**
 
 A) **Pre-Requisites - Setting up the Environment********
-          1) Setting up 
-                   -> Java
-                   -> Eclispse
-                   -> TestNg (Framework implemented on top of Java,used for organizing testcases and test suites
-          2) Downalod Rest -Assured JAR files
-          3) Creating a Project in Eclipse
-          4) Setting up Rest-Assured Jars in class Path of Eclipse
+          1)  Java Set up 
+          2)  IDE Setup
+          3)  Maven setup
+          4)  Create a Maven Project
+          5)  Add Rest Assured Dependencies
+          6)  Setup Maven Compiler Plugin
+          
+                   
               
-B) As the Rest-Assured Setup is done,RESTful Webservice test can be written as mentioned in the attached file.
+B) As the Setup is done,REST API End to End Test can be written as mentioned in the attached file.
 
 
