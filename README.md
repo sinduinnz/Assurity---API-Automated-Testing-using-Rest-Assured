@@ -23,6 +23,8 @@ A) **Pre-Requisites - Setting up the Environment********
           
                    
               
-B) As the Setup is done,REST API End to End Test can be written as mentioned in the attached file.
+B) As the Setup is done,Create a Test Package and a Class.
+
+c) In the class,REST API End to End Test can be written as mentioned in the attached file.
 
 
