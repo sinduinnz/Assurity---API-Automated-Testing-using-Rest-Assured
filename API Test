@@ -22,7 +22,7 @@ pubcli class APITest {
               // Get the Json Path Object Instance from the Response Interface
               JsonPath jsonPathEvaluator = response.jsonpath();
               
-              
+              // **1st Acceptance criteria  -- Start**
               //Query the JsonPath Object to get a string value of the node specified by JsonPath:Name
               String Name =jsonPathEvaluator.get("Name");
               
@@ -31,7 +31,28 @@ pubcli class APITest {
               
               //Validate the 1st Accpetance Criteria -Name should be equal to Carbon credits
               Assert.assertequals(Name, "Carbon credits", " 1st Acceptance Criteria fullfilled -Correct Name recieved in the response"); 
+               // **1st Acceptance criteria  -- End**
               
+               // **2nd Acceptance criteria  -- Start**
+              //Query the JsonPath Object to get a string value of the node specified by JsonPath:CanRelist
+              String CanRelist =jsonPathEvaluator.get("CanRelist");
+              
+              //Print the CanRelist to see what we got
+              System.out.println("CanRelist recieved from reponse is " + CanRelist);
+              
+              //Validate the 2nd Accpetance Criteria -Canrelist should be equal to True
+              Assert.assertequals(Canrelist, "true", " 2nd Acceptance Criteria fullfilled -Correct CanRelist recieved in the response"); 
+              // **2nd Acceptance criteria  -- End**
+              
+             // **3rd Acceptance criteria  -- Start**
+             List<String> Promotions_value = jsonPathEvaluator.getList("Promotions");
+              
+              
+              if(Promotions_value[1].Name == "Gallery")
+              {
+              Assert.assertequals(Promotions_value[1].Description, "2x larger image", "3rd Acceptance Criteria fulfilled- Text is 2x larger image");
+              }
+              // **3rd Acceptance criteria  -- End**
       }        
               
               
