@@ -9,7 +9,7 @@ import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestScpecification;
 
-pubcli class APITest {
+public class APITest {
 
      public static void main(String[] args){
      
