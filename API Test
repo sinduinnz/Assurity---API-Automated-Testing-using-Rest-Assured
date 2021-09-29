@@ -14,7 +14,10 @@ pubcli class APITest {
      public static void main(String[] args){
      
              //Store the URL value in a String baseUrl
-             String baseUrl = "https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json?catalogue=false";;
+             String baseUrl = "https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json?catalogue=false";
+             
+             //Integer used for looping
+             int i =0;
      
               //Assign base URL value to the RESTful webservice
               RestAssured.baseURI = baseUrl;
@@ -56,13 +59,26 @@ pubcli class APITest {
               
              // **3rd Acceptance criteria  -- Start**
              List<String> Promotions_value = jsonPathEvaluator.getList("Promotions");
-              
-              if(Promotions_value[1].Name == "Gallery")
+             
+             //Iterate over the list
+             for(String Value: Promotions_value)
+             {
+               
+              if(i==1)
               {
-              Assert.assertequals(Promotions_value[1].Description, "2x larger image", "3rd Acceptance Criteria fulfilled- Text is 2x larger image");
-              }
+                 if(Value.Name == "Gallery")
+                 {
+                    Assert.assertequals(Value.Description, "2x larger image", "3rd Acceptance Criteria fulfilled- Text is 2x larger image");
+                 }
+               }
+               i = i+1;
+              
+              }//for
+              
               // **3rd Acceptance criteria  -- End**
               
       }        
+      
+      }
               
               
