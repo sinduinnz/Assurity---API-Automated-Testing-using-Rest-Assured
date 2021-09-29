@@ -27,4 +27,8 @@ B) As the Setup is done,Create a Test Package and a Class.
 
 c) In the class,REST API End to End Test can be written as mentioned in the attached file.
 
+d) Run the Rest API Test by right clicking on the test body and Run as Java Application.
+
+e) The Test will run and you can see the results in Console.
+
 
