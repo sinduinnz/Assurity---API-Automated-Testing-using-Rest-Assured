@@ -14,7 +14,10 @@
 **Steps to be followed to execute the TestCase:**
 
 A) **Pre-Requisites - Setting up the Environment********
-          1) Setting up Java,Eclispse and TestNg
+          1) Setting up 
+                   -> Java
+                   -> Eclispse
+                   -> TestNg (Framework implemented on top of Java,used for organizing testcases and test suites
           2) Downalod Rest -Assured JAR files
           3) Creating a Project in Eclipse
           4) Setting up Rest-Assured Jars in class Path of Eclipse
