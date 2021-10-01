@@ -30,9 +30,11 @@ A) **Pre-Requisites - Setting up the Environment********
              d)  Add JSON Path Depedency in pom.xml file (https://mvnrepository.com/artifact/io.rest-assured/json-path)
                                 
               
-B) As the Setup is done,Create a Test Package and a Class.
+B) As the Maven Project is created,create a new Java Package "TestCase" under src/test/java.
 
-c) In the class,REST API End to End Test can be written as mentioned in the attached file.
+c) Create a new Java Class "AssurityAPI" under Package "TestCase". 
+
+d) In the Java class created above ,REST API End to End Test can be written as mentioned in the attached file.
 
 d) Run the Rest API Test by right clicking on the test body and Run as Java Application.
 
