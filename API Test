@@ -17,9 +17,6 @@ public class APITest {
              //Store the URL value in a String baseUrl
              String baseUrl = "https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json?catalogue=false";
              
-             //Integer used for looping
-             int i =0;
-     
               //Assign base URL value to the RESTful webservice
               RestAssured.baseURI = baseUrl;
               
@@ -65,15 +62,12 @@ public class APITest {
              for(String Value: Promotions_value)
              {
                
-              if(i==1)
-              {
-                 if(Value.Name == "Gallery")
-                 {
+              if(Value.Name == "Gallery")
+               {
                     Assert.assertequals(Value.Description, "2x larger image", "3rd Acceptance Criteria fulfilled- Text is 2x larger image");
-                 }
-               }
-               i = i+1;
-              
+               } //if
+               
+               
               }//for
               
               // **3rd Acceptance criteria  -- End**
