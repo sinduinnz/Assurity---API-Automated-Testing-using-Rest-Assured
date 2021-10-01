@@ -17,11 +17,18 @@ A) **Pre-Requisites - Setting up the Environment********
           1)  Java Set up 
           2)  IDE Setup
           3)  Maven setup
-          4)  Create a Maven Project
-          5)  Add Rest Assured Dependencies
-          6)  Setup Maven Compiler Plugin
-          
-                   
+          4)  Create a Maven Project as mentioned in below steps
+                a. Navigate to File -> New -> Maven Project.
+                b. Select Project Name and Location .Click on Next.
+                c. Select an Archetype as QuickStart.Click on Next.
+                c. Give Name into group id and Artifact ID .Enter values into required fields.Click on Finish,
+                d. A Java Project with name equal to Artifact Id value is created in Package Explorer.
+          5) Now open pom.xml file and start adding dependecies as shown in below steps.
+             a)  Add Rest Assured Dependecy in pom.xml file( Link for Rest Assured JAR- https://mvnrepository.com/artifact/io.rest-assured/rest-assured)
+             b)  Add Testng Dependecny in pom.xml file(Required to manage and run tests effectively)(Link for Testng JAR-                                      https://mvnrepository.com/artifact/org.testng/testng) 
+             c)  Add JSON Schema Validator Dependency in pom.xml file(https://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-jsonSchema)
+             d)  Add JSON Path Depedency in pom.xml file (https://mvnrepository.com/artifact/io.rest-assured/json-path)
+                                
               
 B) As the Setup is done,Create a Test Package and a Class.
 
