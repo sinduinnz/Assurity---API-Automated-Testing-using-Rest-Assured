@@ -1,3 +1,5 @@
+// 1st way of writing the testcase
+
 package apitest;
 
 import org.testng.annotations.Test;
@@ -78,7 +80,7 @@ public class APITest {
       }
       
       
-//*********2nd way of writing it --we can do it using given when then too***************
+//*********2nd way of writing the testcase --we can do it using given when then too***************
 package apitest;
 
 import org.testng.annotations.Test;
@@ -100,7 +102,6 @@ public class APITest {
              
                    
       @Test
-      
       public void test_3_acceptance_criteria()
       {
            given()
