@@ -78,7 +78,7 @@ public class APITest {
       }
       
       
-      //New Code
+      //2nd way of writing it --we can do it using given when then too.
       
       @Test
       
@@ -87,7 +87,8 @@ public class APITest {
            given()
            .when()
              .get(baseurl)
-           
+             
+           //2 Accepatnace Criterias
            .then()
               .statuscode(200)
               .body("Name",equalTo("Carbon credits"))
