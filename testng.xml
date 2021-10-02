@@ -1,5 +1,10 @@
+//TestNG.xml file is a configuration file that helps in organizing our tests.It allowas to create and handle multiple test classes ,define test suites and tests.
+//It helps in parameterization of testcases using @Parameter and and Data driven Testing using @DataProvider Annotation.It helps in test report generation.
+
 <?xml version="1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0-dtd>
+
+
 <suite name = "Suite">
   <test thread-count="3" name = "Test">
     <classes>
