@@ -76,5 +76,24 @@ public class APITest {
       
       }
       }
+      
+      
+      //New Code
+      
+      @Test
+      
+      public void test_3_acceptance_criteria()
+      {
+           given()
+           .when()
+             .get(baseurl)
+           
+           .then()
+              .statuscode(200)
+              .body("Name",equalTo("Carbon credits"))
+              .body("CanRelist",equalTo("true"))
+       
+      
+      }
               
               
