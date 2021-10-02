@@ -36,8 +36,10 @@ c) Create a new Java Class "APITEST" under Package "apitest".
 
 d) In the Java class created above ,REST API End to End Test can be written as mentioned in the attached file.
 
-d) Run the Rest API Test by right clicking on the TestNG.xml file and Run as TestNg Suite.
+e) Create the TestNG.xml file by right clicking on the project folder ,go to New,Select File and add the File name as "TestNG.xml" file ,click on finish.Copy the content present in TestNG.xml file attached.
 
-e) Once the TestNG.xml file has run,we can see the results in Console.
+f)Run the Rest API Test by right clicking on the TestNG.xml file and Run as TestNg Suite.
+
+g) Once the TestNG.xml file has run,we can see the results in Console.
 
 
