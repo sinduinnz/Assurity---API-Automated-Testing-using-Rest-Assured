@@ -1,3 +1,5 @@
+<!-- Project Object Model or POM is a XML file containing information about project and the configuration data used by Maven for building the project                 -->
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
